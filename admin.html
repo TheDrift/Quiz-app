@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="/scc_less/admin.css">
+  <title>Admin</title>
+</head>
+<body>
+  <div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
+    <div class="card col-xl-4 border p-3" style="box-shadow: 0 0 5px darkblue;">
+      <label for="" class="d-flex align-items-center">
+        <span style="width: 21%;">Theme:</span>
+        <select name="" id="themes" class=" form-control mt-3 mb-3">
+        </select>
+      </label>
+      <label for="" class="d-flex align-items-center">
+        <span style="width: 21%;">
+          question: 
+        </span>
+        <input type="text" placeholder="" class="question form-control mt-3 mb-3">
+      </label>
+      <label for="" class="d-flex align-items-center">
+        <span style="width: 21%;">
+        option 1: 
+        </span>
+        <input type="text" placeholder="a" class="option form-control mt-3 mb-3" id="a">
+      </label>
+      <label for="" class="d-flex align-items-center">
+        <span style="width: 21%;">
+        option 2: 
+        </span>
+        <input type="text" placeholder="b" class="option form-control mt-3 mb-3" id="b">
+      </label>
+      <label for="" class="d-flex align-items-center">
+        <span style="width: 21%;">
+        option 3: 
+        </span>
+        <input type="text" placeholder="c" class="option form-control mt-3 mb-3" id="c">
+      </label>
+      <label for="" class="d-flex align-items-center">
+        <span style="width: 21%;">
+        option 4: 
+        </span>
+        <input type="text" placeholder="d" class="option form-control mt-3 mb-3" id="d">
+      </label>
+      <label for="" class="d-flex align-items-center">
+        <span class="w-25"> right answer</span>
+        <select name="" id="pravAnswer" class=" form-control w-25 mt-3 mb-3">
+          <option value="a"> A </option>
+          <option value="b"> B </option>
+          <option value="c"> C </option>
+          <option value="d"> D </option>
+        </select>
+      </label>
+      <button class="btn btn-outline-info w-50 justify-content-center subminBtn">
+        Submit
+      </button>
+    </div>
+  </div>
+  <button class="btn btn-outline-danger exit">
+    Exit
+  </button>
+
+  <script src="/js_less/admin.js"></script>
+</body>
+</html>

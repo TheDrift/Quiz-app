@@ -1,0 +1,19 @@
+.theme{
+  box-shadow:  0 0 5px rgb(239, 236, 236);
+  background-color: rgb(194, 193, 185);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.theme:hover{
+  background-color: palegreen;
+}
+.addTheme{
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+.addQuest{
+  position: absolute;
+  top: 3.5rem;
+  left: 1rem;
+}
