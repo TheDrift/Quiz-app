@@ -51,6 +51,7 @@ $addTheme.addEventListener('click' , e => {
   }else{
     const allThemes = JSON.parse(localStorage.getItem('themes'))
     const themes = [...allThemes, newTheme]
+    // allThemes.push(newTheme)
     localStorage.setItem('themes' , JSON.stringify(themes))
     window.location.reload()
   }

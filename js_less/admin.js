@@ -42,9 +42,15 @@ $subminBtn.addEventListener('click' , e =>{
   const database = JSON.parse(localStorage.getItem('quizData'))
   const ques = newObj()
   if(ques){
-    database[chooseTheme].push(ques)
+    if(!database[chooseTheme]){
+      database[chooseTheme] = []
+      database[chooseTheme].push(ques)
+    }else{
+      database[chooseTheme].push(ques)
+      console.log(database);
+    }
     localStorage.setItem('quizData' , JSON.stringify(database))
-    console.log(database);
+    window.location.reload()
   }else{
     alert('заполни поля')
   }
